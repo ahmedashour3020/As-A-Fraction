@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discover essential information about [Article Topic]. Read our article to learn about [Main Points] and get useful tips on [Article Topic].">
+<meta name="keywords" content="[Primary Keywords], [Secondary Keywords], [Article Topic]">
+<meta name="author" content="As A Fractions">
+    <title>Article Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        header p.lead {
+            font-size: 1.25rem;
+            color: #666;
+        }
+        .calculator-section form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .chart-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #fractionChart {
+            margin: auto;
+        }
+        .alert {
+            position: relative;
+            padding: 0.75rem 3.25rem;
+            margin-bottom: 1rem;
+            border: 11px solid transparent;
+            border-radius: 0.25rem;
+        }
+        #percentageResult {
+            font-size: 1.1rem;
+            background-color: #f3eba8;
+            border-radius: 10px;
+            padding: 8px;
+        }
+		
+
+    </style>
+    <style>
+        .explanation-how {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .explanation-how h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .explanation-how p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .explanation-section {
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+        .card-header {
+            border-bottom: 2px solid #007bff;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .card-header h3 {
+            margin: 0;
+            color: #007bff;
+        }
+        .card-body p {
+            margin: 0.5rem 0;
+            color: #333;
+        }
+        .card-body ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            padding: 0;
+        }
+        .card-body table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .card-body table th, .card-body table td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .card-body table th {
+            background-color: #f4f4f4;
+        }
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+        .site-header {
+            background-color: #007bff;
+            padding: 15px 0;
+        }
+        .site-header .navbar-brand {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .site-header .nav-link {
+            color: #fff;
+            margin-right: 15px;
+        }
+        .site-header .nav-link:hover {
+            color: #f8f9fa;
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(255 255 255);
+        }
+        .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+            color: rgb(150 255 0 / 90%);
+            font-weight: 700;
+        }
+        .site-footer {
+            background-color: #343a40;
+            color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .site-footer h5 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .site-footer p, .site-footer a {
+            color: #f8f9fa;
+        }
+        .site-footer a:hover {
+            text-decoration: underline;
+        }
+        .site-footer .social-icons {
+            margin-top: 15px;
+        }
+        .site-footer .social-icons img {
+            width: 24px;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            margin: 5px;
+        }
+        .pagination {
+            justify-content: center;
+        }
+		
+		
+		        @media (max-width: 768px) {
+            .hero-section h2 {
+                font-size: 2rem;
+            }
+            .article h1 {
+                font-size: 2rem;
+            }
+            .article-content h2 {
+                font-size: 1.5rem;
+            }
+        }
+		        .article {
+            background: #ffffff;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .article h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #007bff;
+        }
+        .article p {
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .article-meta {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta span {
+            margin-left: 1rem;
+        }
+        .article-content h2 {
+            font-size: 2rem;
+            margin-top: 2rem;
+        }
+        .article-content h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<header class="site-header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">As A Fractions</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+				    <li class="nav-item">
+                        <a class="nav-link" href="decimals-to-fractions.html">Convert Decimals Manually</a>
+                    </li>
+										<li class="nav-item">
+                        <a class="nav-link" href="measurement-converter.html">Measurement Converter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-as-a-fractions.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <section class="container my-5">
+<article class="article">
+    <h1>Article Title</h1>
+
+   <!-- <img src="https://via.placeholder.com/1200x600" alt="Image Description"> -->
+    <div class="article-content">
+        <p>Welcome to our new article on [Article Topic]. Here, we provide you with a comprehensive introduction to [Main Points of the Article]. Check out the details below for a deeper insight into this topic.</p>
+        <h2>Subheading 1</h2>
+        <p>Start discussing the main points you want to cover. Explain the paragraphs in an organized and smooth manner that fits the topic and is understandable for the reader.</p>
+        <h3>Subheading 1.1</h3>
+        <p>Provide additional detailed information under the subheadings. Use concise paragraphs to make reading easier and enhance understanding.</p>
+        <h2>Subheading 2</h2>
+        <p>Continue providing important information about the topic. You may include specific details and points that might be relevant to the subject.</p>
+        <h3>Subheading 2.1</h3>
+        <p>Offer more information that supports the points you discuss in the article. Use examples or supporting data if necessary.</p>
+        <h2>Conclusion</h2>
+        <p>Conclude the article by summarizing the main points. Provide a summary that highlights the key ideas and offer some tips or recommendations if appropriate.</p>
+    </div>
+</article>
+    </section>
+
+	<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>As A Fractions offers high-quality tools and services to help you with conversions, calculations, and more. Our mission is to simplify complex processes.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="about-as-a-fractions.html">About</a></li>
+                    <li><a href="privacy-policy.html">Privacy policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Useful Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="decimals-to-fractions.html">Convert Decimals Manually</a></li>
+					<li><a href="fractions-table.html">As A Fractions Table</a></li>
+					<li><a href="measurement-converter.html">Measurement Converter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 As A Fractions. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
