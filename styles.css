@@ -73,30 +73,4 @@ textarea {
     font-size: 1em;
 }
 
-/* تنسيق التنسيق الأساسي للشبكة */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
-}
-
-.col {
-    flex: 1;
-    padding: 15px;
-}
-
-/* إعدادات الهوامش الداخلية للبطاقات */
-.card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
