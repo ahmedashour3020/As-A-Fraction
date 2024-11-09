@@ -1,0 +1,23 @@
+# robots.txt file for asafractions.com
+# Author: [asafractions]
+# Description: تحسين فهرسة الموقع في محركات البحث مع حظر الأصول غير الضرورية.
+
+# السماح لجميع محركات البحث بالوصول إلى الموقع
+User-agent: *
+
+# حظر الوصول إلى الملفات غير الضرورية لتحسين الفهرسة
+Disallow: /site.webmanifest
+Disallow: /styles.css
+
+# حظر الوصول إلى ملفات الأنماط الخارجية (Bootstrap)
+Disallow: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+
+# السماح بمحركات البحث بالوصول إلى الصفحات الأساسية فقط
+Allow: /index.html
+Allow: /decimals-to-fractions.html
+Allow: /measurement-converter.html
+Allow: /about-as-a-fractions.html
+Allow: /fractions-table.html
+
+# الإشارة إلى ملف Sitemap لتحسين الفهرسة
+Sitemap: https://asafractions.com/sitemap.xml
