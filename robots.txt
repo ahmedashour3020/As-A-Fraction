@@ -9,6 +9,19 @@ User-agent: *
 Disallow: /site.webmanifest
 Disallow: /styles.css
 
+# حظر الوصول إلى ملفات النظام والملفات غير الضرورية
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /CONTRIBUTING.md
+Disallow: /docs/
+Disallow: /tests/
+
+# حظر الوصول إلى ملفات الأصول التي لا تفيد في السيو
+Disallow: /assets/
+Disallow: /images/
+Disallow: /css/
+Disallow: /js/
+
 # حظر الوصول إلى ملفات الأنماط الخارجية (Bootstrap)
 Disallow: https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
 
